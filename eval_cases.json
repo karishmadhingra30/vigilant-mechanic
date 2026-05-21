@@ -1,0 +1,202 @@
+[
+  {
+    "case_id": "EC-001",
+    "category": "safety_critical",
+    "customer_phone": "555-0142",
+    "customer_message": "When I hit the brakes there's a loud grinding sound and the pedal feels kind of soft. Can I still drive it over after work?",
+    "expected_urgency": 4,
+    "expected_human_review": true,
+    "expected_job_code_categories": ["brakes"],
+    "notes": "Metal-on-metal braking language plus soft pedal should be do-not-drive and human reviewed."
+  },
+  {
+    "case_id": "EC-002",
+    "category": "safety_critical",
+    "customer_phone": "555-0108",
+    "customer_message": "The steering wheel suddenly pulls hard to the right and it feels like I have to fight it to stay in my lane.",
+    "expected_urgency": 4,
+    "expected_human_review": true,
+    "expected_job_code_categories": ["diagnostics"],
+    "notes": "Loss of steering control is safety-critical even without an exact repair code."
+  },
+  {
+    "case_id": "EC-003",
+    "category": "safety_critical",
+    "customer_phone": "555-0117",
+    "customer_message": "I saw smoke coming from under the hood on the freeway and it smelled hot, so I pulled over.",
+    "expected_urgency": 4,
+    "expected_human_review": true,
+    "expected_job_code_categories": ["diagnostics", "engine"],
+    "notes": "Smoke and overheating smell should force escalation."
+  },
+  {
+    "case_id": "EC-004",
+    "category": "safety_critical",
+    "customer_phone": "555-0185",
+    "customer_message": "The car revs but barely moves when I merge, almost like the transmission slips. It happened twice today.",
+    "expected_urgency": 4,
+    "expected_human_review": true,
+    "expected_job_code_categories": ["transmission", "diagnostics"],
+    "notes": "Transmission slipping under load is unsafe and should not be treated as routine."
+  },
+  {
+    "case_id": "EC-005",
+    "category": "safety_critical",
+    "customer_phone": "555-0179",
+    "customer_message": "My battery light came on and then the headlights got dim while I was driving home at night.",
+    "expected_urgency": 4,
+    "expected_human_review": true,
+    "expected_job_code_categories": ["electrical", "diagnostics"],
+    "notes": "Charging failure while driving can cause stalling or visibility risk."
+  },
+  {
+    "case_id": "EC-006",
+    "category": "safety_critical",
+    "customer_phone": "555-0198",
+    "customer_message": "It smells like gas around the car after I park, and I noticed a little wet spot underneath.",
+    "expected_urgency": 4,
+    "expected_human_review": true,
+    "expected_job_code_categories": ["diagnostics"],
+    "notes": "Fuel smell and leak language should trigger safety escalation even without fuel-system code."
+  },
+  {
+    "case_id": "EC-007",
+    "category": "routine",
+    "customer_phone": "555-0164",
+    "customer_message": "I think I'm due for my next oil change and tire rotation. No problems, just trying to stay on schedule.",
+    "expected_urgency": 1,
+    "expected_human_review": false,
+    "expected_job_code_categories": ["oil/fluids", "tires"],
+    "notes": "Straightforward scheduled maintenance."
+  },
+  {
+    "case_id": "EC-008",
+    "category": "routine",
+    "customer_phone": "555-0126",
+    "customer_message": "Can I book a tire rotation? The car drives fine, I just realized it's been a while.",
+    "expected_urgency": 1,
+    "expected_human_review": false,
+    "expected_job_code_categories": ["tires"],
+    "notes": "Routine tire rotation with no symptom."
+  },
+  {
+    "case_id": "EC-009",
+    "category": "routine",
+    "customer_phone": "555-0133",
+    "customer_message": "The cabin air smells a little stale when I turn the fan on. I probably need that filter changed.",
+    "expected_urgency": 1,
+    "expected_human_review": false,
+    "expected_job_code_categories": ["oil/fluids"],
+    "notes": "Cabin filter request only."
+  },
+  {
+    "case_id": "EC-010",
+    "category": "routine",
+    "customer_phone": "555-0151",
+    "customer_message": "No issues, but I'm at about 32 thousand miles and want the normal maintenance visit.",
+    "expected_urgency": 1,
+    "expected_human_review": false,
+    "expected_job_code_categories": ["oil/fluids", "tires"],
+    "notes": "Low-mileage scheduled service."
+  },
+  {
+    "case_id": "EC-011",
+    "category": "routine",
+    "customer_phone": "555-0198",
+    "customer_message": "The maintenance minder says service due soon. Everything feels normal.",
+    "expected_urgency": 1,
+    "expected_human_review": false,
+    "expected_job_code_categories": ["oil/fluids", "tires"],
+    "notes": "Routine maintenance reminder."
+  },
+  {
+    "case_id": "EC-012",
+    "category": "routine",
+    "customer_phone": "555-0164",
+    "customer_message": "Could you replace the engine air filter at my next appointment? No rush.",
+    "expected_urgency": 1,
+    "expected_human_review": false,
+    "expected_job_code_categories": ["oil/fluids"],
+    "notes": "Explicit no-rush filter service."
+  },
+  {
+    "case_id": "EC-013",
+    "category": "ambiguous",
+    "customer_phone": "555-0142",
+    "customer_message": "It's making a weird scraping noise sometimes when I slow down, but not every time.",
+    "expected_urgency": 3,
+    "expected_human_review": true,
+    "expected_job_code_categories": ["brakes"],
+    "notes": "Ambiguous brake-related noise should escalate because of recent brake history."
+  },
+  {
+    "case_id": "EC-014",
+    "category": "ambiguous",
+    "customer_phone": "555-0185",
+    "customer_message": "The check engine light came on yesterday. It drives okay but feels a little sluggish.",
+    "expected_urgency": 3,
+    "expected_human_review": true,
+    "expected_job_code_categories": ["diagnostics", "engine"],
+    "notes": "Driveable check-engine symptom should be this-week and reviewed if ambiguous."
+  },
+  {
+    "case_id": "EC-015",
+    "category": "ambiguous",
+    "customer_phone": "555-0108",
+    "customer_message": "There's a vibration in the steering wheel at highway speed. Around town it seems fine.",
+    "expected_urgency": 3,
+    "expected_human_review": true,
+    "expected_job_code_categories": ["diagnostics", "tires"],
+    "notes": "Steering vibration could be tires, alignment, brakes, or suspension; review expected."
+  },
+  {
+    "case_id": "EC-016",
+    "category": "ambiguous",
+    "customer_phone": "555-0179",
+    "customer_message": "The A/C stopped blowing cold and I hear a faint clicking under the dash.",
+    "expected_urgency": 2,
+    "expected_human_review": true,
+    "expected_job_code_categories": ["HVAC", "diagnostics"],
+    "notes": "Not safety-critical, but symptom is vague and may need diagnosis."
+  },
+  {
+    "case_id": "EC-017",
+    "category": "ambiguous",
+    "customer_phone": "555-0117",
+    "customer_message": "I noticed a few drops of fluid under the truck this morning. I can't tell what color it is.",
+    "expected_urgency": 3,
+    "expected_human_review": true,
+    "expected_job_code_categories": ["diagnostics"],
+    "notes": "Unknown fluid leak should be addressed this week and escalated."
+  },
+  {
+    "case_id": "EC-018",
+    "category": "upsell_opportunity",
+    "customer_phone": "555-0133",
+    "customer_message": "I'm coming in for an oil change. Anything else I should probably do while it's there?",
+    "expected_urgency": 1,
+    "expected_human_review": false,
+    "expected_job_code_categories": ["oil/fluids", "brakes"],
+    "notes": "High-mileage vehicle with prior front brake advisory creates a reasonable maintenance upsell."
+  },
+  {
+    "case_id": "EC-019",
+    "category": "upsell_opportunity",
+    "customer_phone": "555-0185",
+    "customer_message": "Can you do the oil change and check if I'm due for any bigger mileage services?",
+    "expected_urgency": 1,
+    "expected_human_review": false,
+    "expected_job_code_categories": ["oil/fluids", "transmission"],
+    "notes": "High-mileage Altima with transmission history should prompt maintenance review without safety escalation."
+  },
+  {
+    "case_id": "EC-020",
+    "category": "upsell_opportunity",
+    "customer_phone": "555-0179",
+    "customer_message": "I just want routine service before a road trip next month. The car is driving normally.",
+    "expected_urgency": 1,
+    "expected_human_review": false,
+    "expected_job_code_categories": ["oil/fluids", "tires", "electrical"],
+    "notes": "Older high-mileage BMW with recent charging work: routine road-trip inspection may include fluids, tires, and battery/charging check."
+  }
+]
