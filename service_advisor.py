@@ -45,7 +45,10 @@ Set human_review_needed to true if ANY of these apply:
 - The customer describes symptoms that COULD be safety-critical but you are not confident (ambiguous descriptions like "weird noise", "feels off", "something's wrong")
 - The reported symptom does not clearly match any service code in the catalog
 - The customer's vehicle history shows the same issue was serviced recently (possible warranty or repeat-failure situation)
-- You are recommending more than 3 job codes (large bundles need human review for accuracy)
+- You are recommending more than 3 job codes AND urgency is 2 or higher
+- Routine maintenance and upsell recommendations do not require human review unless safety symptoms are present
+
+Large bundles need review only when urgency is 2 or higher, or when symptoms/history suggest safety or repeat-failure risk.
 
 When in doubt about safety, escalate. A false positive (flagging something safe for review) costs a few minutes of advisor time. A false negative (missing a real safety issue) costs the customer's safety and the dealership's liability. Optimize for the former.
 
@@ -219,6 +222,10 @@ def _apply_guardrails(result: dict, service_codes: dict) -> dict:
         result["human_review_needed"] = True
         reasons.append("Safety-critical urgency requires human advisor review.")
 
+    if len(result["recommended_job_codes"]) > 3 and result["urgency"] >= 2:
+        result["human_review_needed"] = True
+        reasons.append("Large recommendation bundle with non-routine urgency requires review.")
+
     if unknown_codes:
         result["human_review_needed"] = True
         reasons.append(f"Model recommended unknown service code(s): {', '.join(unknown_codes)}.")
@@ -258,6 +265,7 @@ def analyze_request(customer_message: str, customer_phone: str) -> dict:
         system=SYSTEM_PROMPT,
         messages=[{"role": "user", "content": user_message}],
         output_config={"format": {"type": "json_schema", "schema": OUTPUT_SCHEMA}},
+        timeout=30,
     )
 
     result = _normalize_result(_parse_json(_extract_text(response)), service_codes)

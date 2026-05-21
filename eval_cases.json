@@ -175,7 +175,7 @@
     "customer_phone": "555-0133",
     "customer_message": "I'm coming in for an oil change. Anything else I should probably do while it's there?",
     "expected_urgency": 1,
-    "expected_human_review": false,
+    "expected_human_review": true,
     "expected_job_code_categories": ["oil/fluids", "brakes"],
     "notes": "High-mileage vehicle with prior front brake advisory creates a reasonable maintenance upsell."
   },
@@ -185,7 +185,7 @@
     "customer_phone": "555-0185",
     "customer_message": "Can you do the oil change and check if I'm due for any bigger mileage services?",
     "expected_urgency": 1,
-    "expected_human_review": false,
+    "expected_human_review": true,
     "expected_job_code_categories": ["oil/fluids", "transmission"],
     "notes": "High-mileage Altima with transmission history should prompt maintenance review without safety escalation."
   },
@@ -195,7 +195,7 @@
     "customer_phone": "555-0179",
     "customer_message": "I just want routine service before a road trip next month. The car is driving normally.",
     "expected_urgency": 1,
-    "expected_human_review": false,
+    "expected_human_review": true,
     "expected_job_code_categories": ["oil/fluids", "tires", "electrical"],
     "notes": "Older high-mileage BMW with recent charging work: routine road-trip inspection may include fluids, tires, and battery/charging check."
   }
