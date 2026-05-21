@@ -1,0 +1,122 @@
+{
+  "BRK-001": {
+    "description": "Front brake pad replacement",
+    "category": "brakes",
+    "estimated_cost_usd": [180, 280],
+    "estimated_hours": 1.5
+  },
+  "BRK-002": {
+    "description": "Rear brake pad replacement",
+    "category": "brakes",
+    "estimated_cost_usd": [170, 260],
+    "estimated_hours": 1.4
+  },
+  "BRK-003": {
+    "description": "Brake rotor resurfacing or replacement",
+    "category": "brakes",
+    "estimated_cost_usd": [220, 520],
+    "estimated_hours": 2.0
+  },
+  "BRK-004": {
+    "description": "Brake system inspection",
+    "category": "brakes",
+    "estimated_cost_usd": [60, 120],
+    "estimated_hours": 0.7
+  },
+  "OIL-001": {
+    "description": "Synthetic oil and filter service",
+    "category": "oil/fluids",
+    "estimated_cost_usd": [75, 120],
+    "estimated_hours": 0.6
+  },
+  "FLT-001": {
+    "description": "Cabin air filter replacement",
+    "category": "oil/fluids",
+    "estimated_cost_usd": [55, 95],
+    "estimated_hours": 0.3
+  },
+  "FLT-002": {
+    "description": "Engine air filter replacement",
+    "category": "oil/fluids",
+    "estimated_cost_usd": [45, 85],
+    "estimated_hours": 0.3
+  },
+  "TIR-001": {
+    "description": "Tire replacement",
+    "category": "tires",
+    "estimated_cost_usd": [180, 420],
+    "estimated_hours": 1.0
+  },
+  "TIR-002": {
+    "description": "Tire rotation and pressure check",
+    "category": "tires",
+    "estimated_cost_usd": [35, 65],
+    "estimated_hours": 0.4
+  },
+  "TIR-003": {
+    "description": "Four-wheel alignment",
+    "category": "tires",
+    "estimated_cost_usd": [110, 180],
+    "estimated_hours": 1.2
+  },
+  "ELE-001": {
+    "description": "Battery replacement",
+    "category": "electrical",
+    "estimated_cost_usd": [160, 290],
+    "estimated_hours": 0.7
+  },
+  "ELE-002": {
+    "description": "Alternator replacement",
+    "category": "electrical",
+    "estimated_cost_usd": [520, 850],
+    "estimated_hours": 2.4
+  },
+  "DIA-001": {
+    "description": "Check engine light diagnostic",
+    "category": "diagnostics",
+    "estimated_cost_usd": [130, 190],
+    "estimated_hours": 1.0
+  },
+  "DIA-002": {
+    "description": "Electrical system diagnostic",
+    "category": "diagnostics",
+    "estimated_cost_usd": [140, 220],
+    "estimated_hours": 1.2
+  },
+  "DIA-003": {
+    "description": "Suspension and steering diagnostic",
+    "category": "diagnostics",
+    "estimated_cost_usd": [120, 200],
+    "estimated_hours": 1.0
+  },
+  "ENG-001": {
+    "description": "Oxygen sensor replacement",
+    "category": "engine",
+    "estimated_cost_usd": [220, 420],
+    "estimated_hours": 1.3
+  },
+  "ENG-002": {
+    "description": "Spark plug replacement",
+    "category": "engine",
+    "estimated_cost_usd": [190, 360],
+    "estimated_hours": 1.5
+  },
+  "TRN-001": {
+    "description": "Transmission fluid service",
+    "category": "transmission",
+    "estimated_cost_usd": [210, 360],
+    "estimated_hours": 1.4
+  },
+  "TRN-002": {
+    "description": "Transmission diagnostic",
+    "category": "transmission",
+    "estimated_cost_usd": [160, 260],
+    "estimated_hours": 1.3
+  },
+  "HVAC-001": {
+    "description": "A/C performance test and recharge",
+    "category": "HVAC",
+    "estimated_cost_usd": [180, 320],
+    "estimated_hours": 1.4
+  }
+}

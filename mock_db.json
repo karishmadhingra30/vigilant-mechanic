@@ -1,0 +1,308 @@
+{
+  "customers": [
+    {
+      "customer_id": "CUST-001",
+      "name": "Maya Patel",
+      "phone": "555-0142"
+    },
+    {
+      "customer_id": "CUST-002",
+      "name": "Jordan Lee",
+      "phone": "555-0198"
+    },
+    {
+      "customer_id": "CUST-003",
+      "name": "Elena Garcia",
+      "phone": "555-0117"
+    },
+    {
+      "customer_id": "CUST-004",
+      "name": "Marcus Johnson",
+      "phone": "555-0164"
+    },
+    {
+      "customer_id": "CUST-005",
+      "name": "Priya Shah",
+      "phone": "555-0133"
+    },
+    {
+      "customer_id": "CUST-006",
+      "name": "Noah Kim",
+      "phone": "555-0185"
+    },
+    {
+      "customer_id": "CUST-007",
+      "name": "Ava Thompson",
+      "phone": "555-0126"
+    },
+    {
+      "customer_id": "CUST-008",
+      "name": "Sofia Martinez",
+      "phone": "555-0179"
+    },
+    {
+      "customer_id": "CUST-009",
+      "name": "Daniel Brooks",
+      "phone": "555-0151"
+    },
+    {
+      "customer_id": "CUST-010",
+      "name": "Hannah Nguyen",
+      "phone": "555-0108"
+    }
+  ],
+  "vehicles": [
+    {
+      "vehicle_id": "VEH-001",
+      "customer_id": "CUST-001",
+      "make": "Toyota",
+      "model": "Camry",
+      "year": 2017,
+      "mileage": 143200,
+      "last_service_date": "2026-03-14"
+    },
+    {
+      "vehicle_id": "VEH-002",
+      "customer_id": "CUST-002",
+      "make": "Honda",
+      "model": "CR-V",
+      "year": 2021,
+      "mileage": 58200,
+      "last_service_date": "2026-01-22"
+    },
+    {
+      "vehicle_id": "VEH-003",
+      "customer_id": "CUST-003",
+      "make": "Ford",
+      "model": "F-150",
+      "year": 2019,
+      "mileage": 96600,
+      "last_service_date": "2025-11-06"
+    },
+    {
+      "vehicle_id": "VEH-004",
+      "customer_id": "CUST-004",
+      "make": "Hyundai",
+      "model": "Elantra",
+      "year": 2024,
+      "mileage": 14100,
+      "last_service_date": "2026-04-09"
+    },
+    {
+      "vehicle_id": "VEH-005",
+      "customer_id": "CUST-005",
+      "make": "Chevrolet",
+      "model": "Equinox",
+      "year": 2016,
+      "mileage": 151800,
+      "last_service_date": "2025-09-18"
+    },
+    {
+      "vehicle_id": "VEH-006",
+      "customer_id": "CUST-006",
+      "make": "Nissan",
+      "model": "Altima",
+      "year": 2018,
+      "mileage": 112400,
+      "last_service_date": "2026-02-27"
+    },
+    {
+      "vehicle_id": "VEH-007",
+      "customer_id": "CUST-007",
+      "make": "Subaru",
+      "model": "Outback",
+      "year": 2020,
+      "mileage": 74400,
+      "last_service_date": "2026-03-02"
+    },
+    {
+      "vehicle_id": "VEH-008",
+      "customer_id": "CUST-008",
+      "make": "BMW",
+      "model": "330i",
+      "year": 2015,
+      "mileage": 128900,
+      "last_service_date": "2025-12-11"
+    },
+    {
+      "vehicle_id": "VEH-009",
+      "customer_id": "CUST-009",
+      "make": "Kia",
+      "model": "Telluride",
+      "year": 2023,
+      "mileage": 32100,
+      "last_service_date": "2026-04-25"
+    },
+    {
+      "vehicle_id": "VEH-010",
+      "customer_id": "CUST-010",
+      "make": "Jeep",
+      "model": "Grand Cherokee",
+      "year": 2022,
+      "mileage": 48700,
+      "last_service_date": "2026-02-03"
+    }
+  ],
+  "service_history": [
+    {
+      "record_id": "SRV-001",
+      "vehicle_id": "VEH-001",
+      "date": "2026-03-14",
+      "job_codes": ["BRK-001", "BRK-003"],
+      "notes": "Front brake pads replaced; rotors resurfaced after pulsing complaint.",
+      "mileage_at_service": 141850
+    },
+    {
+      "record_id": "SRV-002",
+      "vehicle_id": "VEH-001",
+      "date": "2025-08-19",
+      "job_codes": ["OIL-001", "TIR-002"],
+      "notes": "Synthetic oil service and tire rotation; rear pads noted at 4 mm.",
+      "mileage_at_service": 133200
+    },
+    {
+      "record_id": "SRV-003",
+      "vehicle_id": "VEH-002",
+      "date": "2026-01-22",
+      "job_codes": ["OIL-001", "FLT-001"],
+      "notes": "Routine maintenance; cabin filter replaced.",
+      "mileage_at_service": 54800
+    },
+    {
+      "record_id": "SRV-004",
+      "vehicle_id": "VEH-002",
+      "date": "2025-07-03",
+      "job_codes": ["TIR-002", "BRK-004"],
+      "notes": "Tire rotation and brake inspection; brakes measured within spec.",
+      "mileage_at_service": 48950
+    },
+    {
+      "record_id": "SRV-005",
+      "vehicle_id": "VEH-003",
+      "date": "2025-11-06",
+      "job_codes": ["DIA-001", "ENG-002"],
+      "notes": "Check engine light diagnosed as intermittent misfire; spark plugs replaced.",
+      "mileage_at_service": 91800
+    },
+    {
+      "record_id": "SRV-006",
+      "vehicle_id": "VEH-003",
+      "date": "2025-04-12",
+      "job_codes": ["TRN-001", "OIL-001"],
+      "notes": "Transmission fluid service completed; no leaks found.",
+      "mileage_at_service": 85100
+    },
+    {
+      "record_id": "SRV-007",
+      "vehicle_id": "VEH-004",
+      "date": "2026-04-09",
+      "job_codes": ["OIL-001", "TIR-002"],
+      "notes": "First scheduled service; no concerns found.",
+      "mileage_at_service": 13600
+    },
+    {
+      "record_id": "SRV-008",
+      "vehicle_id": "VEH-004",
+      "date": "2025-10-17",
+      "job_codes": ["FLT-001"],
+      "notes": "Cabin air filter replaced due to odor complaint.",
+      "mileage_at_service": 7800
+    },
+    {
+      "record_id": "SRV-009",
+      "vehicle_id": "VEH-005",
+      "date": "2025-09-18",
+      "job_codes": ["BRK-002", "BRK-003"],
+      "notes": "Rear pads and rotors replaced; advised front brakes likely due soon.",
+      "mileage_at_service": 146900
+    },
+    {
+      "record_id": "SRV-010",
+      "vehicle_id": "VEH-005",
+      "date": "2025-02-21",
+      "job_codes": ["DIA-002", "ELE-001"],
+      "notes": "Battery failed load test and was replaced after intermittent no-start.",
+      "mileage_at_service": 137400
+    },
+    {
+      "record_id": "SRV-011",
+      "vehicle_id": "VEH-006",
+      "date": "2026-02-27",
+      "job_codes": ["DIA-001", "ENG-001"],
+      "notes": "Check engine light traced to oxygen sensor; sensor replaced.",
+      "mileage_at_service": 110700
+    },
+    {
+      "record_id": "SRV-012",
+      "vehicle_id": "VEH-006",
+      "date": "2025-06-28",
+      "job_codes": ["TRN-002", "DIA-001"],
+      "notes": "Customer reported delayed shifting; diagnostic found stored transmission codes.",
+      "mileage_at_service": 101300
+    },
+    {
+      "record_id": "SRV-013",
+      "vehicle_id": "VEH-007",
+      "date": "2026-03-02",
+      "job_codes": ["TIR-001", "TIR-003"],
+      "notes": "Two tires replaced after uneven wear; alignment completed.",
+      "mileage_at_service": 72800
+    },
+    {
+      "record_id": "SRV-014",
+      "vehicle_id": "VEH-007",
+      "date": "2025-09-10",
+      "job_codes": ["OIL-001", "BRK-004"],
+      "notes": "Routine oil service; brake inspection showed even wear.",
+      "mileage_at_service": 66450
+    },
+    {
+      "record_id": "SRV-015",
+      "vehicle_id": "VEH-008",
+      "date": "2025-12-11",
+      "job_codes": ["ELE-002", "DIA-002"],
+      "notes": "Alternator output low; alternator replaced and charging system retested.",
+      "mileage_at_service": 125600
+    },
+    {
+      "record_id": "SRV-016",
+      "vehicle_id": "VEH-008",
+      "date": "2025-05-29",
+      "job_codes": ["HVAC-001", "OIL-001"],
+      "notes": "A/C recharge and leak dye added; advised monitoring cooling performance.",
+      "mileage_at_service": 118900
+    },
+    {
+      "record_id": "SRV-017",
+      "vehicle_id": "VEH-009",
+      "date": "2026-04-25",
+      "job_codes": ["OIL-001", "TIR-002"],
+      "notes": "Routine service completed; vehicle still under factory warranty.",
+      "mileage_at_service": 31800
+    },
+    {
+      "record_id": "SRV-018",
+      "vehicle_id": "VEH-009",
+      "date": "2025-12-02",
+      "job_codes": ["BRK-004"],
+      "notes": "Brake inspection after squeak complaint; no immediate repair needed.",
+      "mileage_at_service": 27100
+    },
+    {
+      "record_id": "SRV-019",
+      "vehicle_id": "VEH-010",
+      "date": "2026-02-03",
+      "job_codes": ["DIA-003", "BRK-004"],
+      "notes": "Customer reported steering wheel vibration; inspection found slight front rotor runout.",
+      "mileage_at_service": 46200
+    },
+    {
+      "record_id": "SRV-020",
+      "vehicle_id": "VEH-010",
+      "date": "2025-07-18",
+      "job_codes": ["OIL-001", "FLT-002"],
+      "notes": "Oil service and engine air filter replacement.",
+      "mileage_at_service": 38400
+    }
+  ]
+}
